@@ -54,7 +54,8 @@
         padding-bottom: 200px;
         padding-top: 200px; }   
 
-    .backdrop { position:fixed ;
+    .backdrop { opacity: 1;
+        position:fixed ;
             top: 0;
             left: 0;
 
@@ -83,26 +84,26 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
     }
-    .modal-close-button{position: absolute;
+    .modal-close-button{display: flex;
+        position: absolute;
+
         top: 0;
         right: 0;
-
         width: 30px;
         height: 30px;
-        padding: 0;
+        padding: 9px 10px;
+
         margin-top: 8px;
+        align-content: center;
         margin-right: 8px;
-
-        align-items: center;
         justify-content: center;
-
+        
         color: #000000;
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-
         cursor: pointer;
-
+    }
     }
 
 
@@ -209,11 +210,12 @@
     .header a:hover,
     .header a:focus { color: var(--accent-color);}
     
-     .list-head .curent-portfolio, 
-     .list-head .curent-studio {
+     .curent-portfolio, 
+     .curent-studio {position:relative; 
         color: var(--accent-color); padding-top: 32px; padding-bottom: 32px;
         }
-    .list-head {position:relative; }
+        
+    
     ::after {
         content: '';
         width: 100%;
