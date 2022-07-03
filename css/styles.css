@@ -154,9 +154,21 @@
     .header a:hover,
     .header a:focus { color: var(--accent-color);}
     
-    .curent-portfolio, 
-    .curent-studio {color: var(--accent-color); padding-top: 32px; padding-bottom: 32px;}
-    
+     .list-head .curent-portfolio, 
+     .list-head .curent-studio {position:relative;
+        color: var(--accent-color); padding-top: 32px; padding-bottom: 32px;
+        }
+    .curent_line { 
+        position: absolute;
+        content: "";
+       
+        transform: translateY(50%);
+       
+        width: 48px;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px;
+    }
     .logo {
         font-family: 'Raleway', sans-serif;
         text-decoration: none;
