@@ -54,6 +54,13 @@
         padding-bottom: 200px;
         padding-top: 200px; }   
 
+        .backdrop { position:fixed ;
+        
+        }
+
+
+
+
     .section-comand {background: var(--background-button);
         padding-bottom: 94px; padding-top: 94px; 
       }
