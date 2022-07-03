@@ -214,9 +214,8 @@
         color: var(--accent-color); padding-top: 32px; padding-bottom: 32px;
         }
     .list-head {position:relative; }
-    .curent-line::after {
+    ::after {
         content: '';
-       
         width: 100%;
         height: 4px;
         position: absolute;
