@@ -155,18 +155,17 @@
     .header a:focus { color: var(--accent-color);}
     
      .list-head .curent-portfolio, 
-     .list-head .curent-studio {position:relative;
+     .list-head .curent-studio {
         color: var(--accent-color); padding-top: 32px; padding-bottom: 32px;
         }
-    
-    
-    ::after {
+    .list-head {position:relative; }
+    .curent-line::after {
         content: '';
-        display: block;
+       
         width: 100%;
         height: 4px;
         position: absolute;
-        bottom: -1px;
+        bottom: -8px;
         left: 0;
         border-radius: 2px;
         background-color: var(--accent-color);}
