@@ -246,31 +246,33 @@
         margin: calc(var(--indent) / 2);
     }
     .card-item:hover,
-    .card-item:focus {box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    .card-item:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);cursor: pointer;}
 
-    .card {display: inline-block;
-        position: relative;
-    }
-    
-    .card-overlay{
-        
-        
+    .card { position: relative;
+        overflow: hidden;}
+
+    .card-overlay{display: flex;
         position: absolute;
+       
+        top: 0;
+        left: 0;
 
-        /* opacity: 0; */
-
-        width: 370px;
-        height: 294px;
-
-       background: rgba(33, 150, 243, 0.9);
+        width: 100%;
         
+        transform: translateY(100%);
+        
+        align-items: center;
+        justify-content: center;
+    
+       background: rgba(33, 150, 243, 0.9);
     }
 
-    .card-overlay:hover,
-    .card-overlay:focus { opacity: 1;
-        transform: translateY(-100%);
+    .card-item:hover .card-overlay
+     { 
+        transform: translateY(0);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }   
