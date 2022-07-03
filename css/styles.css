@@ -160,7 +160,7 @@
         }
     
     
-    .nav-link.current::after {
+    ::after {
         content: '';
         display: block;
         width: 100%;
